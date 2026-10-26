@@ -1,0 +1,6 @@
+{
+  "name": "SOUL Food & Music | Maboneng",
+  "description": "Good Food. Good Music. Good Soul. Elegant dining, flame grills, and live soul atmosphere at 289 Fox Street, Maboneng Lifestyle Centre. Instant WhatsApp reservations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Warm Golden Gradient for Neon Channel Letters -->
+    <linearGradient id="goldFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8db" />
+      <stop offset="35%" stop-color="#f5c768" />
+      <stop offset="70%" stop-color="#e5a93c" />
+      <stop offset="100%" stop-color="#b87a18" />
+    </linearGradient>
+
+    <!-- Inner Glow Gradient -->
+    <linearGradient id="goldCore" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#fff4cc" />
+      <stop offset="100%" stop-color="#ffd57a" />
+    </linearGradient>
+
+    <!-- Warm Atmospheric Glow Filter -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="20" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="ambientBackglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="35" />
+    </filter>
+  </defs>
+
+  <!-- Deep Back Glow for Dark Canvas -->
+  <g opacity="0.6" filter="url(#ambientBackglow)">
+    <!-- Backglow for S -->
+    <ellipse cx="145" cy="210" rx="90" ry="140" fill="#e5a93c" />
+    <!-- Backglow for O -->
+    <ellipse cx="370" cy="210" rx="100" ry="145" fill="#f5c768" />
+    <!-- Backglow for U -->
+    <ellipse cx="605" cy="210" rx="85" ry="140" fill="#e5a93c" />
+    <!-- Backglow for L -->
+    <ellipse cx="800" cy="210" rx="90" ry="140" fill="#d99120" />
+  </g>
+
+  <!-- Main Isolated Vector Typography -->
+  <g filter="url(#neonGlow)">
+    <!-- Arched Text: MUSIC above the O -->
+    <g fill="url(#goldFace)" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="28" letter-spacing="14">
+      <path id="curveMusic" d="M 275,85 Q 370,45 465,85" fill="none" stroke="none" />
+      <text text-anchor="middle">
+        <textPath href="#curveMusic" startOffset="50%">
+          MUSIC
+        </textPath>
+      </text>
+    </g>
+
+    <!-- Letter S (Custom stylized letter with loop at bottom left) -->
+    <!-- Outer stroke & shape -->
+    <path
+      d="M 205,105 
+         C 195,95 175,85 145,85 
+         C 100,85 75,115 75,150 
+         C 75,190 100,210 135,230 
+         C 170,250 200,275 200,315 
+         C 200,355 170,380 130,380 
+         C 95,380 75,360 65,335 
+         C 60,320 62,305 75,295 
+         C 88,285 105,290 115,305 
+         C 120,315 125,325 135,325 
+         C 145,325 155,318 155,305 
+         C 155,275 125,255 95,235 
+         C 65,215 40,185 40,145 
+         C 40,95 80,55 145,55 
+         C 185,55 215,75 225,90 
+         Z"
+      fill="url(#goldFace)"
+    />
+
+    <!-- Letter O (With signature diagonal S-curve / coffee bean / note motif) -->
+    <!-- Outer rim -->
+    <path
+      d="M 370,55 
+         C 435,55 480,120 480,210 
+         C 480,300 435,365 370,365 
+         C 305,365 260,300 260,210 
+         C 260,120 305,55 370,55 Z
+         M 370,88
+         C 325,88 295,140 295,210
+         C 295,280 325,332 370,332
+         C 415,332 445,280 445,210
+         C 445,140 415,88 370,88 Z"
+      fill="url(#goldFace)"
+      fill-rule="evenodd"
+    />
+    <!-- S-curve divider inside O -->
+    <path
+      d="M 345,90 
+         C 385,140 330,220 395,330
+         C 400,328 402,320 398,312
+         C 340,215 390,145 352,88
+         Z"
+      fill="url(#goldCore)"
+    />
+
+    <!-- Letter U (Left vertical stem, rounded base, right stem curling into teardrop hook) -->
+    <path
+      d="M 530,90 
+         L 555,90 
+         L 555,270 
+         C 555,320 585,345 615,345 
+         C 645,345 675,320 675,270 
+         L 675,135 
+         C 675,105 655,95 640,105 
+         C 630,112 625,122 625,132 
+         C 625,120 635,100 655,90 
+         C 680,78 705,95 705,130 
+         L 705,270 
+         C 705,345 660,380 615,380 
+         C 570,380 525,345 525,270 
+         L 525,90 
+         Z"
+      fill="url(#goldFace)"
+    />
+
+    <!-- Letter L (Top teardrop loop flowing into tall upright, curved bottom sweep) -->
+    <path
+      d="M 725,115 
+         C 715,125 710,135 710,145 
+         C 710,125 725,95 750,88 
+         C 765,84 775,90 775,105 
+         L 775,310 
+         L 865,310 
+         C 890,310 905,300 905,285 
+         C 905,270 890,260 870,260 
+         L 805,260 
+         L 805,88 
+         L 775,88 
+         C 760,88 745,95 735,105 
+         Z"
+      fill="url(#goldFace)"
+    />
+
+    <!-- Arched Text: FOOD under the O -->
+    <g fill="url(#goldFace)" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="28" letter-spacing="14">
+      <path id="curveFood" d="M 285,375 Q 370,410 455,375" fill="none" stroke="none" />
+      <text text-anchor="middle">
+        <textPath href="#curveFood" startOffset="50%">
+          FOOD
+        </textPath>
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #15110e;
+    color: #ede9e3;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Warm ambient glowing golden and espresso palettes inspired by the interior */
+.bg-warm-canvas {
+  background: radial-gradient(circle at 50% 0%, #2b1d14 0%, #1a140f 45%, #130f0c 100%);
+}
+
+.bg-table-warmth {
+  background: linear-gradient(180deg, rgba(45, 29, 18, 0.9) 0%, rgba(22, 17, 13, 0.98) 100%);
+}
+
+.glow-gold {
+  box-shadow: 0 0 35px -5px rgba(229, 169, 60, 0.35), 0 0 15px -3px rgba(245, 199, 104, 0.25);
+}
+
+.glow-gold-subtle {
+  box-shadow: 0 0 25px -4px rgba(229, 169, 60, 0.22);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(245, 199, 104, 0.5), 0 0 40px rgba(217, 145, 32, 0.3);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff2d1 0%, #f5c768 40%, #d99120 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #140f0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #382b22;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #543f30;
+}
